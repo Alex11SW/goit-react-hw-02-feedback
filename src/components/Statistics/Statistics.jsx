@@ -1,16 +1,18 @@
-import React from 'react';
-import styles from './statistics.module.css'
+import React from "react";
+import styles from "./statistics.module.css";
 
- const Statistics = ({ total, Good, Neutral, Bad, feedback}) => {     
-    return (
-      <div className={styles.block}>
-                    <p>Good: {Good}</p>
-                    <p>Neutral: {Neutral}</p>
-                    <p>Bad: {Bad}</p>
-                    <p>Total: {total}</p>
-                    <p className={styles.feedback}>Positive feedback: {feedback}%</p>
-                </div>
-    )
-}
+const Statistics = ({ total, good, neutral, bad, positivePercentage }) => {
+  return (
+    <div className={styles.block}>
+      <p>Good: {good}</p>
+      <p>Neutral: {neutral}</p>
+      <p>Bad: {bad}</p>
+      <p>Total: {total}</p>
+      <p className={styles.feedback}>
+        Positive feedback: {positivePercentage}%
+      </p>
+    </div>
+  );
+};
 
 export default Statistics;

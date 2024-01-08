@@ -5,16 +5,12 @@
 .section {
   font-size: 30px;
 }
-.wrapper {
-  /* стилі для обгортки */
-}
 
 .statisticsSection {
   width: 340px;
   font-size: 25px;
   font-weight: 540;
 }
-
-.statisticsWrapper {
-  /* стилі для обгортки другої секції */
+.sectionClass {
+  width: 400px;
 }

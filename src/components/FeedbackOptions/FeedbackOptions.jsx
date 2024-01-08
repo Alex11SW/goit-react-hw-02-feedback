@@ -1,13 +1,13 @@
-import React from 'react';
-import styles from './feedbackoptions.module.css'
+import React from "react";
+import styles from "./feedbackoptions.module.css";
 
-const FeedbackOptions  = ({ options, leaveVote }) => {
-     const buttonElements = options.map(name => <button onClick={(()=>leaveVote(name))} key={name}>{name}</button>);
-    return (
-         <div className={styles.block}>
-                    {buttonElements}
-                </div>
-    )
-}
+const FeedbackOptions = ({ options, onLeaveFeedback }) => {
+  const buttonElements = options.map((option) => (
+    <button onClick={() => onLeaveFeedback(option)} key={option}>
+      {option}
+    </button>
+  ));
+  return <div className={styles.block}>{buttonElements}</div>;
+};
 
-export default FeedbackOptions; 
+export default FeedbackOptions;
